@@ -19,34 +19,8 @@ npm i -g yarn
 yarn install
 ```
 
-2. To start metro bundler, use the command below:
+2. To start the application, use the command below to start Expo and choose to run on simulator or run the app through the Expo app on your device:
 
 ```
 yarn start
-```
-
-3. For iOS, run the app with:
-
-```
-yarn ios
-```
-
-or with these shortcuts to select a device:
-
-```
-yarn iphone:8
-```
-
-```
-yarn iphone:xsmax
-```
-
-```
-yarn ipad
-```
-
-4. For Android, start an emulator or connect a device to your computer first, then run the command below to install:
-
-```
-yarn android
 ```

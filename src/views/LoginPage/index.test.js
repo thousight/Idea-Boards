@@ -6,5 +6,7 @@ import LoginPage from './index'
 describe('Login Page', () => {
   const render = renderer.create(<LoginPage />)
 
-  expect(render).toBeDefined()
+  it('should render', () => {
+    expect(render).toBeDefined()
+  })
 })

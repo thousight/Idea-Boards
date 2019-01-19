@@ -12,6 +12,6 @@
     "no-console": "off",
     "semicolon": "off",
     "ordered-imports": "off",
-    "react/jsx-filename-extension": [1, { "extensions": [".test.js", ".jsx"] }]
+    "react/jsx-filename-extension": "off"
   }
 }
