@@ -13,6 +13,7 @@
     "test:coverage": "yarn test --coverage && open coverage/lcov-report/index.html",
     "eslint": "eslint './src/**/*.js'",
     "lint-staged": "lint-staged",
+    "semantic-release": "semantic-release",
     "preinstall": "node scripts/pre-install.js"
   },
   "dependencies": {
@@ -26,6 +27,9 @@
     "react-navigation": "^3.0.9"
   },
   "devDependencies": {
+    "@semantic-release/commit-analyzer": "^6.1.0",
+    "@semantic-release/git": "^7.0.8",
+    "@semantic-release/release-notes-generator": "^7.1.4",
     "babel-eslint": "^10.0.1",
     "babel-preset-expo": "^5.0.0",
     "eslint": "^5.12.1",
@@ -41,6 +45,8 @@
     "jest-expo": "^32.0.0",
     "lint-staged": "^8.1.0",
     "prettier": "^1.15.3",
-    "react-test-renderer": "^16.7.0"
+    "react-test-renderer": "^16.7.0",
+    "semantic-release": "^15.13.3",
+    "semantic-release-expo": "^2.1.1"
   }
 }
