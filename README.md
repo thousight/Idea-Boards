@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/thousight/Idea-Boards.svg?branch=master)](https://travis-ci.org/thousight/Idea-Boards)
+
 # Idea Boards
 
 An app that helps save your app ideas

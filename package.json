@@ -1,7 +1,7 @@
 {
   "name": "idea-boards",
   "main": "node_modules/expo/AppEntry.js",
-  "private": true,
+  "private": false,
   "scripts": {
     "start": "expo start",
     "publish": "expo publish",
