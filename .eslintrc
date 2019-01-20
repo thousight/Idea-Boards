@@ -12,6 +12,7 @@
     "no-console": "off",
     "semicolon": "off",
     "ordered-imports": "off",
-    "react/jsx-filename-extension": "off"
+    "react/jsx-filename-extension": "off",
+    "react/react-in-jsx-scope": "off"
   }
 }

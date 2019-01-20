@@ -6,11 +6,11 @@
     "start": "expo start",
     "android": "expo start --android",
     "ios": "expo start --ios",
-    "clean": "rm -rf /tmp/metro-bundler-cache-* && watchman watch-del-all && rm -rf node_modules/ && yarn cache clean && yarn && yarn start -- --reset-cache",
+    "clean": "rm -rf /tmp/metro-bundler-cache-* && watchman watch-del-all && rm -rf node_modules/ && yarn cache clean && yarn && yarn start",
     "eject": "expo eject",
     "test": "node_modules/.bin/jest",
-    "test:watch": "node_modules/.bin/jest --watch",
-    "test:coverage": "node_modules/.bin/jest --coverage && open coverage/lcov-report/index.html",
+    "test:watch": "yarn test --watch",
+    "test:coverage": "yarn test --coverage && open coverage/lcov-report/index.html",
     "eslint": "eslint './src/**/*.js'",
     "lint-staged": "lint-staged",
     "preinstall": "node scripts/pre-install.js"
@@ -19,8 +19,10 @@
     "expo": "^31.0.2",
     "formik": "^1.4.2",
     "native-base": "^2.10.0",
+    "prop-types": "^15.6.2",
     "react": "16.5.0",
     "react-native": "https://github.com/expo/react-native/archive/sdk-31.0.0.tar.gz",
+    "react-native-markdown-renderer": "^3.2.8",
     "react-navigation": "^3.0.9"
   },
   "devDependencies": {
