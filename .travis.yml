@@ -11,5 +11,5 @@ jobs:
     - stage: 'Pipeline'
       script:
         - yarn test --ci
-        - yarn publish
+        - expo publish
         - yarn semantic-release
