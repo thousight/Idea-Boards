@@ -2,15 +2,19 @@
 language: node_js
 node_js:
   - node
+  - lts/*
 cache:
   directories:
     - ~/.npm
     - .jest
 jobs:
   include:
-    - stage: 'Pipeline'
+    - stage: test
       script:
         - yarn test --ci
+    - stage: deploy
+      node_js: lts/*
+      script:
         - yarn semantic-release
         - expo login -u $EXPO_USERNAME -p $EXPO_PASSWORD
         - expo publish --non-interactive
