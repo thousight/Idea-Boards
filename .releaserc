@@ -6,6 +6,7 @@
       {
         "releaseRules": [
           { "type": "docs", "release": "prepatch" },
+          { "type": "chore", "release": "prepatch" },
           { "type": "fix", "release": "patch" },
           { "type": "refactor", "release": "patch" },
           { "type": "feat", "release": "minor" },
@@ -31,7 +32,15 @@
     [
       "@semantic-release/git",
       {
-        "assets": ["package.json"],
+        "assets": ["package.json", "app.json"],
+        "releaseRules": [
+          { "type": "docs", "release": "prepatch" },
+          { "type": "chore", "release": "prepatch" },
+          { "type": "fix", "release": "patch" },
+          { "type": "refactor", "release": "patch" },
+          { "type": "feat", "release": "minor" },
+          { "type": "perf", "release": "major" }
+        ],
         "message": "chore(release): ${nextRelease.version} [skip ci]\n\n${nextRelease.notes}"
       }
     ]

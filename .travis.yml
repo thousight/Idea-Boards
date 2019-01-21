@@ -11,6 +11,6 @@ jobs:
     - stage: 'Pipeline'
       script:
         - yarn test --ci
-        - expo login -u <EXPO USERNAME> -p <EXO PASSWORD>
+        - expo login -u $EXPO_USERNAME -p $EXPO_PASSWORD
         - expo publish --non-interactive
         - yarn semantic-release
