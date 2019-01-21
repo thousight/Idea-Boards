@@ -8,10 +8,8 @@ cache:
     - .jest
 jobs:
   include:
-    - stage: test
+    - stage: 'Pipeline'
       script:
         - yarn test --ci
-    - stage: deploy
-      script:
-        - yarn semantic-release
         - yarn publish
+        - yarn semantic-release
