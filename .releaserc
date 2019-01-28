@@ -1,15 +1,9 @@
 {
-  "branch": "master",
   "plugins": [
     [
       "@semantic-release/commit-analyzer",
       {
-        "releaseRules": [
-          { "type": "fix", "release": "patch" },
-          { "type": "refactor", "release": "patch" },
-          { "type": "feat", "release": "minor" },
-          { "type": "perf", "release": "major" }
-        ],
+        "preset": "angular",
         "parserOpts": {
           "noteKeywords": ["BREAKING CHANGE", "BREAKING CHANGES", "BREAKING"]
         }
@@ -28,15 +22,15 @@
       }
     ],
     [
+      "@semantic-release/npm",
+      {
+        "npmPublish": false
+      }
+    ],
+    [
       "@semantic-release/git",
       {
         "assets": ["package.json", "app.json"],
-        "releaseRules": [
-          { "type": "fix", "release": "patch" },
-          { "type": "refactor", "release": "patch" },
-          { "type": "feat", "release": "minor" },
-          { "type": "perf", "release": "major" }
-        ],
         "message": "chore(release): ${nextRelease.version} [skip ci]\n\n${nextRelease.notes}"
       }
     ]

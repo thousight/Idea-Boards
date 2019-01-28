@@ -16,5 +16,6 @@ jobs:
       node_js: lts/*
       script:
         - yarn semantic-release
+        - echo 'fs.inotify.max_user_watches=524288' | sudo tee -a /etc/sysctl.conf && sudo sysctl -p
         - expo login -u $EXPO_USERNAME -p $EXPO_PASSWORD
         - expo publish --non-interactive
