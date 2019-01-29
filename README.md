@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/thousight/Idea-Boards.svg?branch=master)](https://travis-ci.org/thousight/Idea-Boards)
+[![Build Status](https://travis-ci.org/thousight/Idea-Boards.svg?branch=master)](https://travis-ci.org/thousight/Idea-Boards) [![Greenkeeper badge](https://badges.greenkeeper.io/thousight/Idea-Boards.svg)](https://greenkeeper.io/)
 
 # Idea Boards
 
